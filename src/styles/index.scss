@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+* {
+   font-family: "Lato";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #ff6060;
+   margin: 50px;
+   nav {
+      a {
+         margin-left: 20px;
+         font-weight: 500;
+         text-decoration: none;
+         &.selected {
+            text-decoration: underline;
+         }
+         &:visited {
+            color: #ff6060;
+         }
+      }
+   }
+}
+
+.home__banner {
+   position: relative;
+   text-align: center;
+   color: white;
+   z-index: 1;
+   &--img {
+      border-radius: 25px;
+      z-index: 2;
+      filter: brightness(70%);
+   }
+   &--title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+}
+
+.tag {
+   position: absolute;
+   left: 0%;
+   right: 0%;
+   top: 0%;
+   bottom: 0%;
+
+   background: #ff6060;
+   border-radius: 10px;
+}
+
+.thumb {
+   position: absolute;
+   left: 0%;
+   right: 0%;
+   top: 0%;
+   bottom: 0%;
+
+   background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+   );
+   border-radius: 10px;
+}
+
+.dropdownlarge {
+   position: absolute;
+   left: 0%;
+   right: 0%;
+   top: 0%;
+   bottom: 74.46%;
+
+   background: #ff6060;
+   border-radius: 5px;
+}
+
+.dropdown-open {
+   position: absolute;
+   left: 0%;
+   right: 0%;
+   top: 0%;
+   bottom: 0%;
+
+   background: #ff6060;
+   border-radius: 10px;
+}
+
+.error404 {
+   font-weight: 700;
+   font-size: 288px;
+}
