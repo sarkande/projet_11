@@ -6,9 +6,10 @@ function Header() {
    return (
       <header>
          <div className="logo">
-            <img src={logo} alt="logo" />
+            <Link to="/">
+               <img src={logo} alt="logo" />
+            </Link>
          </div>
-
          <nav>
             <Link
                to="/"

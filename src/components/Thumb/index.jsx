@@ -1,14 +1,18 @@
-import img from "../../assets/images/Rectangle_1.png";
+import { Link } from "react-router-dom";
 
-function Thumb() {
+function Thumb(args) {
+   const data = args.data;
+   console.log(data);
    return (
       <div className="thumb">
-         <figure className="thumb__figure">
-            <img className="thumb__figure--img" src={img} alt="" />
-            <figcaption className="thumb__figure--caption">
-               Titre de la location
-            </figcaption>
-         </figure>
+         <Link to={`/logement/${data.id}`}>
+            <figure className="thumb__figure">
+               <img className="thumb__figure--img" src={data.cover} alt="" />
+               <figcaption className="thumb__figure--caption">
+                  {data.title}
+               </figcaption>
+            </figure>
+         </Link>
       </div>
    );
 }

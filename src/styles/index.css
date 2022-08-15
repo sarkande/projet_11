@@ -87,6 +87,13 @@ footer {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home__container a {
+  text-decoration: none;
 }
 
 .tag {
@@ -150,6 +157,26 @@ footer {
 
 .error404 {
   font-weight: 700;
+}
+
+.error__container {
+  color: #ff6060;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.error__container--title {
   font-size: 288px;
+  font-weight: 700;
+  margin-bottom: 66px;
+}
+
+.error__container--text {
+  margin-bottom: 182px;
+  font-size: 36px;
+}
+
+.error__container--link:visited {
+  color: #ff6060;
 }
 /*# sourceMappingURL=index.css.map */

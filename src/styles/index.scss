@@ -71,6 +71,11 @@ footer {
    display: flex;
    flex-wrap: wrap;
    justify-content: flex-start;
+   justify-content: center;
+
+   & a {
+      text-decoration: none;
+   }
 }
 
 .tag {
@@ -136,5 +141,24 @@ footer {
 
 .error404 {
    font-weight: 700;
-   font-size: 288px;
+}
+
+.error__container {
+   color: #ff6060;
+   text-align: center;
+   margin-bottom: 150px;
+   &--title {
+      font-size: 288px;
+      font-weight: 700;
+      margin-bottom: 66px;
+   }
+   &--text {
+      margin-bottom: 182px;
+      font-size: 36px;
+   }
+   &--link {
+      &:visited {
+         color: #ff6060;
+      }
+   }
 }
