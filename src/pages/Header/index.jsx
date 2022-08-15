@@ -1,25 +1,29 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-import kasa_1 from "../../assets/images/kasa_1.png";
-import kasa_2 from "../../assets/images/kasa_2.png";
-import kasa_3 from "../../assets/images/kasa_3.png";
-import kasa_4 from "../../assets/images/kasa_4.png";
+import logo from "../../assets/images/logo.png";
 
 function Header() {
    return (
       <header>
          <div className="logo">
-            <img src={kasa_1} alt="kasa_1" />
-            <img src={kasa_2} alt="kasa_2" />
-            <img src={kasa_3} alt="kasa_3" />
-            <img src={kasa_4} alt="kasa_4" />
+            <img src={logo} alt="logo" />
          </div>
 
          <nav>
-            <Link to="/" className="selected">
+            <Link
+               to="/"
+               className={useLocation().pathname === "/" ? "selected" : null}
+            >
                ACCUEIL
             </Link>
-            <Link to="/about">A PROPOS</Link>
+            <Link
+               to="/about"
+               className={
+                  useLocation().pathname === "/about" ? "selected" : null
+               }
+            >
+               A PROPOS
+            </Link>
          </nav>
       </header>
    );

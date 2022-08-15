@@ -51,6 +51,19 @@ main {
    }
 }
 
+footer {
+   background-color: black;
+   color: white;
+   text-align: center;
+
+   height: 160px;
+   margin-top: 50px;
+   width: 100%;
+   padding-top: 50px;
+   position: absolute;
+   left: 0px;
+}
+
 .home__container {
    background-color: #f7f7f7;
    border-radius: 25px;
