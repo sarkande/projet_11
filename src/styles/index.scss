@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 * {
    font-family: "Lato";
@@ -114,6 +114,39 @@ footer {
          margin-right: 10px;
          margin-top: 10px;
       }
+   }
+}
+
+.dropdownlist {
+   // margin-left: 200px;
+   // margin-right: 200px;
+   min-width: 200px;
+   width: calc(100% - 80px);
+   margin: 0 auto;
+
+   &__title {
+      background-color: #ff6060;
+      color: white;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 24px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      margin-bottom: 20px;
+      &--name {
+         margin: 0;
+      }
+   }
+   &__text {
+      color: #ff6060;
+      padding-left: 15px;
+      background-color: #f7f7f7;
+      margin-bottom: 20px;
    }
 }
 

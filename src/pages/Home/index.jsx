@@ -18,15 +18,6 @@ function Home() {
             {logements.map((logement, index) => (
                <Thumb key={index} data={logement} />
             ))}
-
-            {/* <Link to="/logement/1">
-               <Thumb />
-            </Link>
-            <Thumb />
-            <Thumb />
-            <Thumb />
-            <Thumb />
-            <Thumb /> */}
          </div>
          <Tag valueTag="tag-name" />
       </main>

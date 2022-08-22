@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
   font-family: "Lato";
   font-style: normal;
@@ -133,6 +133,44 @@ footer {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
+}
+
+.dropdownlist {
+  min-width: 200px;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+}
+
+.dropdownlist__title {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.dropdownlist__title--name {
+  margin: 0;
+}
+
+.dropdownlist__text {
+  color: #ff6060;
+  padding-left: 15px;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
 }
 
 .dropdownlarge {
