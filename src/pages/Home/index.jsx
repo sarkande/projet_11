@@ -19,7 +19,6 @@ function Home() {
                <Thumb key={index} data={logement} />
             ))}
          </div>
-         <Tag valueTag="tag-name" />
       </main>
    );
 }
