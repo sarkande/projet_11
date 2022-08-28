@@ -1,6 +1,7 @@
 import logements from "../../assets/logements.json";
 import Error from "../Error";
 import Tag from "../../components/Tag";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Dropdownlist from "../../components/Dropdownlist";
 
@@ -11,21 +12,39 @@ function Logement() {
    let currentPath = useLocation().pathname.split("/");
    let idLogement = currentPath[currentPath.length - 1];
    let logement = logements.filter((logement) => logement.id === idLogement);
+   const [idPicture, setIdPicture] = useState(0);
 
    if (logement.length === 0) return <Error />;
    else logement = logement[0];
-
-   console.log(logement);
-
+   let pictures = logement.pictures;
    return (
       <main>
-         <div className="home__banner">
+         <div className="carroussel">
             <img
                className="home__banner--img"
-               src={logement.cover}
+               src={pictures[idPicture]}
                alt="kasa_1"
             />
+            <div className="control">
+               <i
+                  className="fa-solid fa-angle-left"
+                  onClick={() => {
+                     if (idPicture > 0) setIdPicture(idPicture - 1);
+                     else setIdPicture(pictures.length - 1);
+                  }}
+               ></i>
+
+               <i
+                  className="fa-solid fa-angle-right"
+                  onClick={() => {
+                     if (idPicture < pictures.length - 1)
+                        setIdPicture(idPicture + 1);
+                     else setIdPicture(0);
+                  }}
+               ></i>
+            </div>
          </div>
+
          <div className="home__content">
             <div className="left">
                <h1>{logement.title}</h1>
@@ -43,10 +62,14 @@ function Logement() {
                </div>
                <div>
                   {Array.from({ length: logement.rating }, (_, i) => (
-                     <img key={i} src={star_full} alt={logement.rating} />
+                     <img
+                        key={`rating-${i}`}
+                        src={star_full}
+                        alt={logement.rating}
+                     />
                   ))}
                   {Array.from({ length: 5 - logement.rating }, (_, i) => (
-                     <img key={i} src={star_empty} alt="" />
+                     <img key={`rating-${i}`} src={star_empty} alt="" />
                   ))}
                </div>
             </div>

@@ -234,3 +234,23 @@ footer {
       }
    }
 }
+
+.carroussel {
+   .control {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 0 10px 0 10px;
+
+      position: relative;
+      bottom: calc((415px / 2) + 48px);
+      margin-bottom: -100px;
+      i {
+         cursor: pointer;
+         text-align: center;
+         font-size: 96px;
+         color: white;
+      }
+   }
+}

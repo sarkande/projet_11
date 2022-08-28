@@ -286,4 +286,29 @@ footer {
 .error__container--link:visited {
   color: #ff6060;
 }
+
+.carroussel .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0 10px 0 10px;
+  position: relative;
+  bottom: calc((415px / 2) + 48px);
+  margin-bottom: -100px;
+}
+
+.carroussel .control i {
+  cursor: pointer;
+  text-align: center;
+  font-size: 96px;
+  color: white;
+}
 /*# sourceMappingURL=index.css.map */

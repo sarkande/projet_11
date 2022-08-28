@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 function Thumb(args) {
    const data = args.data;
-   console.log(data);
    return (
       <div className="thumb">
          <Link to={`/logement/${data.id}`}>
