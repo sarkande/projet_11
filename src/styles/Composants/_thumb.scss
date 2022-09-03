@@ -1,0 +1,27 @@
+.thumb {
+   width: 340px;
+   height: 340px;
+
+   margin-right: 25px;
+   margin-bottom: 25px;
+
+   background: linear-gradient(180deg, #ff6060 0%, rgb(128, 48, 48) 100%);
+   border-radius: 10px;
+
+   &__figure {
+      margin: 0;
+      &--img {
+         border-radius: 10px 10px 0px 0px;
+         width: 340px;
+         height: 280px;
+         object-fit: cover;
+      }
+      &--caption {
+         color: white;
+         font-size: 18px;
+         margin-left: 10px;
+         margin-right: 10px;
+         margin-top: 10px;
+      }
+   }
+}

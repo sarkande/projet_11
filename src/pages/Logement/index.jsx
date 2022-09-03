@@ -74,7 +74,7 @@ function Logement() {
                </div>
             </div>
          </div>
-         <div className="container">
+         <div className="home__container-dropdownlists">
             <Dropdownlist title="Description" text={logement.description} />
 
             <Dropdownlist
