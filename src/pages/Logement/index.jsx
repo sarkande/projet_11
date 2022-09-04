@@ -57,10 +57,15 @@ function Logement() {
             </div>
             <div className="right">
                <div className="contact-info">
-                  <h3>{logement.host.name}</h3>
-                  <img src={logement.host.picture} alt={logement.host.name} />
+                  <div className="contact-info__container">
+                     <h3>{logement.host.name}</h3>
+                     <img
+                        src={logement.host.picture}
+                        alt={logement.host.name}
+                     />
+                  </div>
                </div>
-               <div>
+               <div className="rates">
                   {Array.from({ length: logement.rating }, (_, i) => (
                      <img
                         key={`rating-${i}`}

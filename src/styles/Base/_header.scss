@@ -6,6 +6,18 @@ header {
    margin: 50px;
    margin-left: 100px;
    margin-right: 100px;
+
+   @include phone {
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+
+   img {
+      @include phone {
+         width: 75%;
+         min-width: 110px;
+      }
+   }
    nav {
       a {
          margin-left: 20px;

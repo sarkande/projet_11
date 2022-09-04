@@ -8,6 +8,10 @@
    background: linear-gradient(180deg, #ff6060 0%, rgb(128, 48, 48) 100%);
    border-radius: 10px;
 
+   @include phone {
+      width: 100%;
+      margin-right: 0px;
+   }
    &__figure {
       margin: 0;
       &--img {
@@ -15,6 +19,9 @@
          width: 340px;
          height: 280px;
          object-fit: cover;
+         @include phone {
+            width: 100%;
+         }
       }
       &--caption {
          color: white;

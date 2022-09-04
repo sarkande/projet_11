@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import "./Utils/variables";
+@import "./Utils/mixins";
+
 @import "./Base/base";
 @import "./Base/footer";
 @import "./Base/header";
@@ -12,9 +14,3 @@
 
 @import "./Pages/error";
 @import "./Pages/home";
-
-@mixin tablet {
-   @media (min-width: 375px) {
-      @content;
-   }
-}
