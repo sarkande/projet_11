@@ -25,24 +25,27 @@ function Logement() {
                src={pictures[idPicture]}
                alt="kasa_1"
             />
-            <div className="control">
-               <i
-                  className="fa-solid fa-angle-left"
-                  onClick={() => {
-                     if (idPicture > 0) setIdPicture(idPicture - 1);
-                     else setIdPicture(pictures.length - 1);
-                  }}
-               ></i>
 
-               <i
-                  className="fa-solid fa-angle-right"
-                  onClick={() => {
-                     if (idPicture < pictures.length - 1)
-                        setIdPicture(idPicture + 1);
-                     else setIdPicture(0);
-                  }}
-               ></i>
-            </div>
+            {pictures.length > 1 ? (
+               <div className="control">
+                  <i
+                     className="fa-solid fa-angle-left"
+                     onClick={() => {
+                        if (idPicture > 0) setIdPicture(idPicture - 1);
+                        else setIdPicture(pictures.length - 1);
+                     }}
+                  ></i>
+
+                  <i
+                     className="fa-solid fa-angle-right"
+                     onClick={() => {
+                        if (idPicture < pictures.length - 1)
+                           setIdPicture(idPicture + 1);
+                        else setIdPicture(0);
+                     }}
+                  ></i>
+               </div>
+            ) : null}
          </div>
 
          <div className="home__content">
