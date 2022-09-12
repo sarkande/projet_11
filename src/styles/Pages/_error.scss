@@ -3,7 +3,7 @@
 }
 
 .error__container {
-   color: #ff6060;
+   color: $color-primary;
    text-align: center;
    margin-bottom: 150px;
    &--title {
@@ -17,7 +17,7 @@
    }
    &--link {
       &:visited {
-         color: #ff6060;
+         color: $color-primary;
       }
    }
 }

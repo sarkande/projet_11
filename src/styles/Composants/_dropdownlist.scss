@@ -8,7 +8,7 @@
    }
 
    &__title {
-      background-color: #ff6060;
+      background-color: $color-primary;
       color: white;
       border-radius: 5px;
       padding: 5px;
@@ -30,7 +30,7 @@
       }
    }
    &__text {
-      color: #ff6060;
+      color: $color-primary;
       padding-left: 15px;
       background-color: #f7f7f7;
       margin-bottom: 20px;

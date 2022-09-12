@@ -2,7 +2,7 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   color: #ff6060;
+   color: $color-primary;
    margin: 50px;
    margin-left: 100px;
    margin-right: 100px;
@@ -27,7 +27,7 @@ header {
             text-decoration: underline;
          }
          &:visited {
-            color: #ff6060;
+            color: $color-primary;
          }
       }
    }

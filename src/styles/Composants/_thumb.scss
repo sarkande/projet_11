@@ -5,7 +5,11 @@
    margin-right: 25px;
    margin-bottom: 25px;
 
-   background: linear-gradient(180deg, #ff6060 0%, rgb(128, 48, 48) 100%);
+   background: linear-gradient(
+      180deg,
+      $color-primary 0%,
+      rgb(128, 48, 48) 100%
+   );
    border-radius: 10px;
 
    @include phone {
