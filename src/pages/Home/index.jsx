@@ -2,7 +2,6 @@ import React from "react";
 import logements from "../../assets/logements.json";
 
 import background from "../../assets/images/bg2.png";
-import Tag from "../../components/Tag";
 import Thumb from "../../components/Thumb";
 
 function Home() {
