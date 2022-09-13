@@ -10,12 +10,22 @@
       font-size: 288px;
       font-weight: 700;
       margin-bottom: 66px;
+
+      @include phone {
+         font-size: 96px;
+         margin-bottom: 11px;
+      }
    }
    &--text {
       margin-bottom: 182px;
       font-size: 36px;
+      @include phone {
+         font-size: 18px;
+         margin-bottom: 133px;
+      }
    }
    &--link {
+      font-size: 14px;
       &:visited {
          color: $color-primary;
       }

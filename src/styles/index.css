@@ -256,9 +256,27 @@ main h2 {
   margin-bottom: 66px;
 }
 
+@media (max-width: 905px) {
+  .error__container--title {
+    font-size: 96px;
+    margin-bottom: 11px;
+  }
+}
+
 .error__container--text {
   margin-bottom: 182px;
   font-size: 36px;
+}
+
+@media (max-width: 905px) {
+  .error__container--text {
+    font-size: 18px;
+    margin-bottom: 133px;
+  }
+}
+
+.error__container--link {
+  font-size: 14px;
 }
 
 .error__container--link:visited {
