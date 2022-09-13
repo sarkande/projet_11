@@ -65,10 +65,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
+      margin: 0;
       @include phone {
          font-size: 24px;
          text-align: left;
-         transform: translate(-90%, -90%);
+         transform: translate(-90%, -60%);
       }
    }
 }
