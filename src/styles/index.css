@@ -160,11 +160,25 @@ main h2 {
   margin-bottom: -100px;
 }
 
+@media (max-width: 905px) {
+  .carroussel .control {
+    bottom: calc((255px / 2) + 48px);
+  }
+}
+
 .carroussel .control i {
   cursor: pointer;
   text-align: center;
   font-size: 96px;
   color: white;
+}
+
+.carroussel-counter {
+  text-align: center;
+  color: white;
+  bottom: 35px;
+  position: relative;
+  margin-bottom: -30px;
 }
 
 .dropdownlist {
@@ -364,6 +378,23 @@ main h2 {
     text-align: left;
     -webkit-transform: translate(-90%, -60%);
             transform: translate(-90%, -60%);
+  }
+}
+
+.home__banner-logement--img {
+  width: 100%;
+  border-radius: 25px;
+  z-index: 2;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 905px) {
+  .home__banner-logement--img {
+    height: 255px;
   }
 }
 

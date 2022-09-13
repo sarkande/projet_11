@@ -74,6 +74,20 @@
    }
 }
 
+.home__banner-logement {
+   &--img {
+      width: 100%;
+      border-radius: 25px;
+      z-index: 2;
+      filter: brightness(70%);
+      height: 415px;
+      object-fit: cover;
+      @include phone {
+         height: 255px;
+      }
+   }
+}
+
 .home__container {
    background-color: #f7f7f7;
    border-radius: 25px;

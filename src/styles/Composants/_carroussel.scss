@@ -9,11 +9,23 @@
       position: relative;
       bottom: calc((415px / 2) + 48px);
       margin-bottom: -100px;
+
+      @include phone {
+         bottom: calc((255px / 2) + 48px);
+      }
       i {
          cursor: pointer;
          text-align: center;
          font-size: 96px;
          color: white;
       }
+   }
+
+   &-counter {
+      text-align: center;
+      color: white;
+      bottom: 35px;
+      position: relative;
+      margin-bottom: -30px;
    }
 }

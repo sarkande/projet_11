@@ -21,7 +21,7 @@ function Logement() {
       <main>
          <div className="carroussel">
             <img
-               className="home__banner--img"
+               className="home__banner-logement--img"
                src={pictures[idPicture]}
                alt="kasa_1"
             />
@@ -46,6 +46,10 @@ function Logement() {
                   ></i>
                </div>
             ) : null}
+         </div>
+
+         <div className="carroussel-counter">
+            {idPicture + 1}/{pictures.length}
          </div>
 
          <div className="home__content">
